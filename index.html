@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Digital Identity & Border Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blockchain-Based Global Digital Identity System</h1>
+    <p>Secure and Decentralized Identity Management & Border Control</p>
+  </header>
+  <main>
+    <!-- Identity Registration Section -->
+    <section class="identity-form">
+      <h2>Register Digital Identity</h2>
+      <form id="identityForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="passportNumber">Passport Number:</label>
+        <input type="text" id="passportNumber" name="passportNumber" required>
+
+        <label for="country">Country of Origin:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="fingerprint">Fingerprint Authentication:</label>
+        <button type="button" id="checkFingerprint">Check Fingerprint</button>
+        <p id="fingerprintStatus"></p>
+
+        <label for="faceScanner">Face Scan Authentication:</label>
+        <button type="button" id="openCamera">Open Camera</button>
+        <video id="cameraFeed" autoplay muted></video>
+        <p id="faceStatus"></p>
+
+        <button type="submit">Register Identity</button>
+      </form>
+    </section>
+
+    <!-- Immigration Status Section -->
+    <section class="immigration-status">
+      <h2>Check Immigration Status</h2>
+      <button id="checkStatus">Fetch Immigration Data</button>
+      <div id="statusResult"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Blockchain Border Control</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
